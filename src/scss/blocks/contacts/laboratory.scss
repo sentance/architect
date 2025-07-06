@@ -1,0 +1,242 @@
+.laboratory {
+    width: 100%;
+    height: auto;
+    padding: 80px 120px;
+    box-sizing: border-box;
+    font-family: 'PP Object Sans', sans-serif;
+    color: #333;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 80px;
+        line-height: 100%;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__location {
+        border: 1px solid #333333;
+        border-radius: 100px;
+        padding: 16px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 58px;
+        box-sizing: border-box;
+    }
+
+    &__location-text {
+        font-weight: 400;
+        font-size: 20px;
+        color: #333;
+        margin: 0;
+    }
+
+    &__divider {
+        width: 100%;
+        max-width: 1200px;
+        border: none;
+        border-top: 1px solid #000;
+        opacity: 0.5;
+        margin: 40px 0;
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        width: 100%;
+        max-width: 12000px;
+        color: #333;
+        margin: 0 auto 40px auto;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+    }
+
+    &__text-block {
+        max-width: 600px;
+    }
+
+    &__spec-title {
+        font-size: 32px;
+        font-weight: 400;
+        margin: 0 0 40px 0;
+    }
+
+    &__spec-lines {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    &__spec-line {
+        display: flex;
+        align-items: end;
+        gap: 9px;
+    }
+
+    &__spec-name {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__spec-dash {
+        flex-grow: 1;
+        height: 1px;
+        border: none;
+        background-image: linear-gradient(to right, #333 0px, #333 4px, transparent 4px, transparent 8px);
+        background-repeat: repeat-x;
+        background-size: 9px 1px;
+        opacity: 0.5;
+    }
+
+    &__spec-value {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__image-placeholder {
+        width: 478px;
+        height: 429px;
+        background: #d9d9d9;
+        border-radius: 60px;
+    }
+
+    @media (max-width: 1351px) {
+        &__content {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding: 80px;
+
+        &__title {
+            font-size: 64px;
+        }
+
+        &__image-placeholder {
+            width: 100%;
+            max-width: 460px;
+            height: auto;
+            aspect-ratio: 478 / 429;
+        }
+
+        &__description {
+            font-size: 22px;
+        }
+
+        &__spec-name,
+        &__spec-value {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        padding: 60px;
+
+        &__title {
+            font-size: 48px;
+        }
+
+        &__location {
+            padding: 12px 32px;
+            height: auto;
+        }
+
+        &__location-text {
+            font-size: 18px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+
+        &__spec-title {
+            font-size: 28px;
+        }
+
+        &__spec-name,
+        &__spec-value {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 40px;
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__location-text {
+            font-size: 16px;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+
+        &__spec-title {
+            font-size: 24px;
+        }
+
+        &__spec-name,
+        &__spec-value {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding: 32px;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__location {
+            padding: 8px 20px;
+        }
+
+        &__location-text {
+            font-size: 14px;
+        }
+
+        &__description {
+            font-size: 16px;
+        }
+
+        &__spec-title {
+            font-size: 20px;
+        }
+
+        &__spec-name,
+        &__spec-value {
+            font-size: 16px;
+        }
+
+        &__image-placeholder {
+            width: 100%;
+            border-radius: 40px;
+        }
+    }
+}

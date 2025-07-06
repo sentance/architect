@@ -1,0 +1,303 @@
+.about {
+    position: relative;
+    background-color: #aaa59a;
+    border-radius: 80px;
+    width: 100%;
+    height: 801px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 48%;
+        height: 100%;
+        background-image: url('assets/images/about-bg.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 80px;
+        z-index: 0;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 180px;
+        max-width: 1200px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+    &__left {
+        max-width: 660px;
+        padding: 100px 0px 80px 0px;
+        color: #fff;
+    }
+
+    &__title-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        height: 62px;
+    }
+
+    &__icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    &__title {
+        font-family: 'PP Object Sans', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: 0;
+        color: #ffffff;
+        height: 62px;
+    }
+
+    &__description {
+        font-family: 'PP Object Sans', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        height: 104px;
+        width: 540px;
+        white-space: pre-line;
+        color: #ffffff;
+    }
+
+    &__subheading {
+        font-family: 'PP Object Sans', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 32px;
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        list-style: disc inside;
+        padding: 0;
+        margin: 0 0 60px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        font-family: 'PP Object Sans', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        max-width: 565px;
+        white-space: pre-line;
+    }
+
+    &__button {
+        font-family: 'PP Object Sans', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+        background-color: #587e88;
+        border: none;
+        border-radius: 100px;
+        padding: 24px 80px;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    &__right {
+        width: 660px;
+        height: 801px;
+        border-radius: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding: 60px 0px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    &__fact {
+        background-color: transparent;
+        border-radius: 40px;
+        width: 100%;
+        max-width: 312px;
+        height: 133px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+
+    &__fact-number {
+        font-family: 'PP Object Sans', sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+    }
+
+    &__fact-label {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: "PP Object Sans", sans-serif;
+    }
+
+    @media (max-width: 1253px) {
+        height: auto;
+        border-radius: 140px;
+        
+        &::after {
+            width: 100%;
+            height: 300px;
+            top: auto;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border-radius: 0 0 80px 80px;
+            background-position: center bottom;
+        }
+
+        &__container {
+            flex-direction: column;
+            gap: 40px;
+            height: auto;
+        }
+
+        &__left {
+            height: 614px;
+            max-width: 100%;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        &__title-wrapper {
+            justify-content: center;
+            height: auto;
+        }
+
+        &__icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__title {
+            font-size: 32px;
+            height: auto;
+        }
+
+        &__description {
+            width: 100%;
+            height: auto;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        &__subheading {
+            font-size: 24px;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        &__list {
+            gap: 16px;
+            margin-bottom: 40px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &__item {
+            font-size: 16px;
+            max-width: 100%;
+        }
+
+        &__button {
+            font-size: 16px;
+            padding: 16px 40px;
+            border-radius: 60px;
+            margin: 0 auto;
+            display: inline-block;
+        }
+
+        &__right {
+            width: 100%;
+            height: auto;
+            border-radius: 40px;
+            padding: 20px 0;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &__fact {
+            max-width: 150px;
+            height: auto;
+            padding-left: 0;
+            text-align: center;
+        }
+
+        &__fact-number {
+            font-size: 36px;
+        }
+
+        &__fact-label {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &__title {
+            font-size: 24px;
+        }
+
+        &__icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__description {
+            font-size: 14px;
+        }
+
+        &__subheading {
+            font-size: 20px;
+        }
+
+        &__item {
+            font-size: 14px;
+        }
+
+        &__button {
+            font-size: 14px;
+            padding: 12px 30px;
+        }
+
+        &__fact-number {
+            font-size: 28px;
+        }
+
+        &__fact-label {
+            font-size: 14px;
+        }
+    }
+}

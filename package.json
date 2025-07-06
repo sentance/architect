@@ -1,0 +1,16 @@
+{
+  "name": "architectexpertweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass src/scss/main.scss dist/style.css --no-source-map --style=compressed",
+    "watch:sass": "sass --watch src/scss/main.scss dist/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

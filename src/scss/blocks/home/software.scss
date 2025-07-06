@@ -1,0 +1,154 @@
+.software {
+  background-color: #aaa59a;
+  border-radius: 80px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 80px 120px;
+  box-sizing: border-box;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  &__icon {
+    width: 62px;
+    height: 62px;
+    margin-right: 24px;
+  }
+
+  &__title {
+    font-family: 'PP Object Sans', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: #fff;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__card {
+    background-color: #fff;
+    border-radius: 40px;
+    width: 282px;
+    height: 460px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__card-title {
+    font-family: 'PP Object Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    max-width: 145px;
+  }
+
+  &__circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+      0px 1px 2px 0px #0000001A,
+      1px 4px 4px 0px #00000017,
+      3px 8px 5px 0px #0000000D,
+      5px 14px 6px 0px #00000003,
+      7px 22px 7px 0px #00000000;
+  }
+
+  &__circle-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  &__image {
+    width: 100%;
+    height: 308px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 1392px) {
+    &__cards {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__card {
+      width: 240px;
+      height: auto;
+    }
+
+    &__image {
+      height: 260px;
+    }
+  }
+
+  @media (max-width: 680px) {
+    padding: 40px 20px;
+
+    &__header {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    &__icon {
+      margin-right: 0;
+      margin-bottom: 12px;
+      width: 50px;
+      height: 50px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__card {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+    }
+
+    &__card-title {
+      font-size: 20px;
+    }
+
+    &__circle {
+      width: 50px;
+      height: 50px;
+    }
+
+    &__image {
+      height: auto;
+      max-height: 280px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use 'utils/fonts';
+@use 'utils/variables';
+@use 'base/reset';
+@use 'blocks/header';
+// home page
+@use 'utils/home-page';
+@use 'blocks/home/home.scss';
+@use 'blocks/home/statement';
+@use 'blocks/home/about';
+@use 'blocks/home/goals';
+@use 'blocks/home/software';
+@use 'blocks/home/collaborations';
+// about page
+@use 'blocks/about/about-hero';
+@use 'blocks/about/about-message';
+@use 'blocks/about/about-us';
+@use 'blocks/about/services';
+@use 'blocks/about/certificates';
+// contacts page
+@use 'blocks/contacts/contacts-hero';
+@use 'blocks/contacts/laboratory';
+@use 'blocks/contacts/gallery';
+// common
+@use 'blocks/page-hero';
+@use 'blocks/projects';
+//footer
+@use 'blocks/cta';
+@use 'blocks/footer';

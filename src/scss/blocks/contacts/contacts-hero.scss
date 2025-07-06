@@ -1,0 +1,27 @@
+.contacts-hero {
+    height: 600px;
+    width: 100%;
+    background-image: url('../../../assets/images/contacts-hero-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+
+    &__container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 120px;
+        box-sizing: border-box;
+        color: #fff;
+    }
+
+    @media (max-width: 1250px) {
+        height: 420px;
+    }
+}

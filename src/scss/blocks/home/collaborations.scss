@@ -1,0 +1,205 @@
+.collaborations {
+    width: 100%;
+    height: auto;
+    padding: 80px 120px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__line {
+        width: 100%;
+        max-width: 1200px;
+        border: 1px solid #000;
+        opacity: 0.5;
+        margin-bottom: 40px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+    &__icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    &__title {
+        font-family: 'PP Object Sans', sans-serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__card {
+        width: 384px;
+        border-radius: 40px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &--gray {
+            height: 497px;
+            background: #D9D9D9;
+        }
+    }
+
+    &__image-wrapper {
+        position: relative;
+        width: 100%;
+        height: 493px;
+        border-radius: 40px;
+        overflow: hidden;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__circle {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+        width: 100px;
+        height: 100px;
+        background: #ffffff;
+        border-radius: 50%;
+    }
+
+    &__card-title {
+        font-family: 'PP Object Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 100%;
+        color: #000000;
+        margin-top: 20px;
+        padding-left: 32px;
+    }
+
+    &__button {
+        margin: 120px auto 0 auto;
+        display: block;
+        width: 406px;
+        height: 85px;
+        background: #ffffff;
+        color: #333333;
+        font-family: 'PP Object Sans', sans-serif;
+        font-size: 28.62px;
+        border-radius: 100px;
+        border: 1px solid #333333;
+        padding: 24px 24px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 992px) {
+        padding: 60px 40px;
+
+        &__line {
+            max-width: 100%;
+        }
+
+        &__title {
+            font-size: 36px;
+        }
+
+        &__cards {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__card--gray {
+            height: auto;
+        }
+
+        &__card-title {
+            font-size: 20px;
+            padding-left: 20px;
+        }
+
+        &__circle {
+            width: 80px;
+            height: 80px;
+            top: 20px;
+            left: 20px;
+        }
+
+        &__image-wrapper {
+            height: 350px;
+            border-radius: 30px;
+        }
+
+        &__button {
+            width: 300px;
+            height: 70px;
+            font-size: 22px;
+            margin-top: 80px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        padding: 40px 20px;
+
+        &__header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        &__icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__card--gray {
+            height: auto;
+        }
+
+        &__card-title {
+            font-size: 18px;
+            padding-left: 16px;
+        }
+
+        &__circle {
+            width: 60px;
+            height: 60px;
+            top: 16px;
+            left: 16px;
+        }
+
+        &__image-wrapper {
+            height: 280px;
+            border-radius: 20px;
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 280px;
+            height: 60px;
+            font-size: 18px;
+            margin-top: 40px;
+        }
+    }
+}
