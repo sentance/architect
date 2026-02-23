@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
   <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script src="/js/header.js" defer></script>
+  <script src="/js/software.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,15 +28,15 @@
 
       <nav class="header__nav">
         <a href="/about/" class="header__link">About</a>
-        <a href="/projects" class="header__link">Project</a>
-        <a href="/collaborations" class="header__link">Collaborations</a>
-        <a href="#projects" class="header__link">Contacts</a>
+        <a href="/projects" class="header__link">Projects</a>
+        <a href="/#collaborations" class="header__link">Collaborations</a>
+        <a href="#footer" class="header__link">Contacts</a>
         <div class="header__lang">
           EN
           <img src="/assets/images/arrow-down.svg" alt="Arrow down" class="header__lang-icon" />
           <ul class="header__lang-dropdown">
             <li class="header__lang-item">EN</li>
-            <li class="header__lang-item">RU</li>
+            <li class="header__lang-item">DE</li>
             <li class="header__lang-item">UA</li>
           </ul>
         </div>
@@ -45,8 +48,8 @@
     <div class="home__container">
       <div class="home__content">
         <img src="assets/images/a.svg" alt="A." class="home__image" />
-        <p class="home__text">LLC DESIGN BUREAU ARCHITECT EXPERT</p>
-        <button class="home__button">Contact us</button>
+        <p class="home__text">LLC DESIGN BUREAU "ARCHITECT EXPERT"</p>
+        <button class="home__button" onclick="window.location.href='/#footer'">Contact Us</button>
       </div>
     </div>
   </section>
@@ -67,9 +70,9 @@
       </div>
 
       <div class="projects__cards">
-        <a href="/contacts" class="projects__card">
+        <a href="/boiler-house" class="projects__card">
           <div class="projects__card-image-wrapper">
-            <img src="assets/images/project-1.svg" alt="Project 1" class="projects__card-image" />
+            <img src="/src/assets/images/boiler/IMG_8563.jpg" alt="Project 1" class="projects__card-image" />
             <div class="projects__location">
               <span class="projects__location-text">Odessa, UA</span>
             </div>
@@ -77,7 +80,7 @@
           <h3 class="projects__card-title">Reserve Modular Boiler House</h3>
         </a>
 
-        <a href="/contacts" class="projects__card">
+        <a href="/dna" class="projects__card">
           <div class="projects__card-image-wrapper">
             <img src="assets/images/project-2.svg" alt="Project 2" class="projects__card-image" />
             <div class="projects__location">
@@ -87,17 +90,17 @@
           <h3 class="projects__card-title">DNA Laboratory</h3>
         </a>
 
-        <a href="/contacts" class="projects__card">
+        <a href="/hall" class="projects__card">
           <div class="projects__card-image-wrapper">
-            <img src="assets/images/project-2.svg" alt="Project 3" class="projects__card-image" />
+            <img src="/src/assets/images/hall/IMG_0002.jpg" alt="Project 3" class="projects__card-image" />
             <div class="projects__location">
               <span class="projects__location-text">Dripro, UA</span>
             </div>
           </div>
-          <h3 class="projects__card-title">DNA Laboratory</h3>
+          <h3 class="projects__card-title">Law Academy HALL 1,2 </h3>
         </a>
       </div>
-      <button class="projects__button">All Projects</button>
+      <button class="projects__button" onclick="window.location.href='/projects'">All Projects</button>
   </section>
 
   <section class="about">
@@ -108,19 +111,16 @@
           <h2 class="about__title">About Us</h2>
         </div>
         <p class="about__description">
-          Design Bureau Architect Expert LLC specializes in the comprehensive management of investment and
-          construction projects for industrial and civil facilities
+          LLC DESIGN BUREAU "ARCHITEСT EXPERT" specializes in comprehensive management of investment and construction projects for industrial and civil facilities.
         </p>
         <h3 class="about__subheading">Additionally, we provide:</h3>
         <ul class="about__list">
           <li class="about__item">Support in obtaining expert reports</li>
           <li class="about__item">Author’s and technical supervision during construction</li>
-          <li class="about__item">Comprehensive technical inspection of buildings and structures (including industrial
-            facilities) with a
-            technical assessment report on the condition of structures.
+          <li class="about__item">Comprehensive technical inspection of buildings and structures (including industrial facilities) with a technical assessment report on the condition of structures.
           </li>
         </ul>
-        <button class="about__button">Read More</button>
+        <button class="about__button" onclick="window.location.href='/about'">Read More</button>
       </div>
 
       <div class="about__right">
@@ -143,7 +143,7 @@
   <section class="goals">
     <div class="goals__container">
       <h2 class="goals__title">
-        Our mission is to redefine the customer service standard in the construction industry.
+        Our mission is to raise the standard of customer service in the construction industry.
       </h2>
 
       <div class="goals__grid">
@@ -151,52 +151,117 @@
           <div class="goals__icon-wrapper">
             <img src="assets/images/international-expansion.svg" alt="Icon" class="goals__icon" />
           </div>
-          <p class="goals__card-title">Process Optimization</p>
+          <p class="goals__card-title">International Expansion</p>
         </div>
 
         <div class="goals__card">
           <div class="goals__icon-wrapper">
             <img src="assets/images/quality-improvement.svg" alt="Icon" class="goals__icon" />
           </div>
-          <p class="goals__card-title">Process Optimization</p>
+          <p class="goals__card-title">Quality Improvement</p>
         </div>
 
         <div class="goals__card">
           <div class="goals__icon-wrapper">
             <img src="assets/images/digital-transformation.svg" alt="Icon" class="goals__icon" />
           </div>
-          <p class="goals__card-title">Process Optimization</p>
+          <p class="goals__card-title">Digital Transformation</p>
         </div>
 
         <div class="goals__card">
           <div class="goals__icon-wrapper">
             <img src="assets/images/sustainability.svg" alt="Icon" class="goals__icon" />
           </div>
-          <p class="goals__card-title">Process Optimization</p>
+          <p class="goals__card-title">Sustainability</p>
         </div>
 
         <div class="goals__card">
           <div class="goals__icon-wrapper">
             <img src="assets/images/innovation.svg" alt="Icon" class="goals__icon" />
           </div>
-          <p class="goals__card-title">Process Optimization</p>
+          <p class="goals__card-title">Innovation</p>
         </div>
 
         <div class="goals__card">
           <div class="goals__icon-wrapper">
             <img src="assets/images/partnerships.svg" alt="Icon" class="goals__icon" />
           </div>
-          <p class="goals__card-title">Process Optimization</p>
+          <p class="goals__card-title">Partnerships</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="software">
+   <!-- <section class="software">
     <div class="software__container">
       <div class="software__header">
         <img src="assets/images/arrow-right-white.svg" alt="Arrow" class="software__icon" />
         <h2 class="software__title">Unsere Software</h2>
+      </div>
+
+    <div class="swiper software__swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="software__card">
+        <div class="software__card-header">
+          <p class="software__card-title">Advance Steel</p>
+          <div class="software__circle software__circle--advance"></div>
+        </div>
+        <img src="assets/images/advance-steel.svg" alt="Software Screenshot" class="software__image" />
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="software__card">
+        <div class="software__card-header">
+          <p class="software__card-title">Tekla Structures</p>
+          <div class="software__circle software__circle--tekla"></div>
+        </div>
+        <img src="assets/images/tekla-structures.svg" alt="Software Screenshot" class="software__image" />
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="software__card">
+        <div class="software__card-header">
+          <p class="software__card-title">Autodesk Autocad</p>
+          <div class="software__circle software__circle--autocad"></div>
+        </div>
+        <img src="assets/images/autodesk-autocad.svg" alt="Software Screenshot" class="software__image" />
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="software__card">
+        <div class="software__card-header">
+          <p class="software__card-title">AutoCAD</p>
+          <div class="software__circle software__circle--autocad2"></div>
+        </div>
+        <img src="assets/images/autodesk-autocad.svg" alt="Software Screenshot" class="software__image" />
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="software__card">
+        <div class="software__card-header">
+          <p class="software__card-title">Revit</p>
+          <div class="software__circle software__circle--autocad"></div>
+        </div>
+        <img src="assets/images/revit.png" alt="Software Screenshot" class="software__image" />
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
+  </section> -->
+  <section class="software">
+    <div class="software__container">
+      <div class="software__header">
+        <img src="assets/images/arrow-right-white.svg" alt="Arrow" class="software__icon" />
+        <h2 class="software__title">Our Software</h2>
       </div>
 
       <div class="software__cards">
@@ -211,18 +276,18 @@
         <div class="software__card">
           <div class="software__card-header">
             <p class="software__card-title">Tekla Structures</p>
-           <div class="software__circle software__circle--tekla"></div>
+            <div class="software__circle software__circle--tekla"></div>
           </div>
           <img src="assets/images/tekla-structures.svg" alt="Software Screenshot" class="software__image" />
         </div>
 
-        <div class="software__card">
+        <!-- <div class="software__card">
           <div class="software__card-header">
             <p class="software__card-title">Autodesk Autocad</p>
             <div class="software__circle software__circle--autocad"></div>
           </div>
           <img src="assets/images/autodesk-autocad.svg" alt="Software Screenshot" class="software__image" />
-        </div>
+        </div> -->
 
         <div class="software__card">
           <div class="software__card-header">
@@ -235,14 +300,14 @@
         <div class="software__card">
           <div class="software__card-header">
             <p class="software__card-title">Revit</p>
-            <div class="software__circle software__circle--autocad2"></div>
+            <div class="software__circle software__circle--autocad"></div>
           </div>
           <img src="assets/images/revit.png" alt="Software Screenshot" class="software__image" />
         </div>
       </div>
   </section>
 
-  <section class="collaborations">
+  <section class="collaborations" id="collaborations">
     <div class="collaborations__container">
       <hr class="collaborations__line" />
 
@@ -254,15 +319,15 @@
       <div class="collaborations__cards">
          <a href="/allcons-industry" class="collaborations__card">
           <div class="collaborations__image-wrapper">
-            <img src="assets/images/allcons-industry-bg.png" alt="Project" class="collaborations__image" />
+            <img src="/src/assets/images/collab1.png" alt="Project" class="collaborations__image" />
             <div class="collaborations__circle collaborations__circle--allcons"></div>
           </div>
-          <p class="collaborations__card-title">AllCons Industry S.R.O.</p>
+          <p class="collaborations__card-title">Allcons Industry S.R.O.</p>
         </a>
 
         <a href="/world-health-organization" class="collaborations__card">
           <div class="collaborations__image-wrapper">
-            <img src="assets/images/world-health-organization-bg.png" alt="Project" class="collaborations__image" />
+            <img src="/src/assets/images/wh-main.png" style="transform: scale(0.9)" alt="Project" class="collaborations__image" />
             <div class="collaborations__circle collaborations__circle--who"></div>
           </div>
           <p class="collaborations__card-title">World Health Organization</p>
@@ -270,53 +335,98 @@
 
         <a href="/scdn"  class="collaborations__card">
           <div class="collaborations__image-wrapper">
-            <img src="assets/images/scdn-bg.png" alt="Project" class="collaborations__image" />
+            <img src="/src/assets/images/swcentre-s.png" style="transform: scale(0.9)" alt="Project" class="collaborations__image" />
             <div class="collaborations__circle collaborations__circle--scdh"></div>
           </div>
           <p class="collaborations__card-title">Swiss Center For Design and Health (SCDH)</p>
         </div>
       </a>
 
-      <button class="collaborations__button">All Collaborations</button>
+      <button class="collaborations__button" onclick="window.location.href='/collaborations'">All Collaborations</button>
     </div>
   </section>
 
   <section class="cta">
     <div class="cta__container">
-      <div class="cta__background">
-        <div class="cta__content">
-          <h2 class="cta__title">Become a Subcontractor</h2>
-          <img src="./assets/images/arrow-right-white.svg" alt="Arrow" class="cta__arrow" />
+      <a href="mailto:serhii.matiukhov@architect-expert.com?subject=Subcontractor Inquiry" style="text-decoration: none;">
+        <div class="cta__background">
+          <div class="cta__content">
+            <h2 class="cta__title">Become a partner</h2>
+            <img src="/src/assets/images/arrow-right-white.svg" alt="Arrow" class="cta__arrow" />
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
-  <section class="footer">
-    <div class="footer__container">
-      <img src="./assets/images/avatar.svg" alt="Serhii Matiukhov" class="footer__avatar" />
+  <section class="footer" id="footer">
+    <div class="footer__container" style="margin-bottom: 50px;">
+      <img src="/src/assets/images/main_char.png" alt="MYKYTA Matiukhov" class="footer__avatar" />
 
       <div class="footer__info">
         <h2 class="footer__name">Serhii Matiukhov</h2>
         <p class="footer__position">Founder and Managing Director</p>
-        <p class="footer__contact">TEL: +380503265630</p>
-        <p class="footer__contact footer__mail">MAIL: serhii.matiukhov@architect-expert.com</p>
+        
+        <p class="footer__contact">
+          TEL: <a href="tel:+380503265630" class="footer__link">+380503265630</a>
+        </p>
+        
+        <p class="footer__contact footer__mail">
+          MAIL: <a href="mailto:serhii.matiukhov@architect-expert.com" class="footer__link">serhii.matiukhov@architect-expert.com</a>
+        </p>
       </div>
+      
 
       <div class="footer__right-group">
         <div class="footer__divider"></div>
         <div class="footer__right">
           <div class="footer__circles">
-            <div class="footer__circle">
-              <img src="./assets/images/call.svg" alt="Call" class="footer__circle-icon" />
-            </div>
-            <div class="footer__circle">
-              <img src="./assets/images/sms.svg" alt="SMS" class="footer__circle-icon" />
-            </div>
+            <a href="tel:+380503265630" class="footer__circle" aria-label="Call MYKYTA Matiukhov">
+              <img src="/assets/images/call.svg" alt="Call" class="footer__circle-icon" />
+            </a>
+          
+            <a href="mailto: mykyta.matiukhov@architect-expert.com" class="footer__circle" aria-label="Email MYKYTA Matiukhov">
+              <img src="/assets/images/sms.svg" alt="Email" class="footer__circle-icon" />
+            </a>
           </div>
           <p class="footer__company-name">Design Bureau Architect Expert LLC</p>
           <p class="footer__address">Borysohlibska St. 17/1, 04070 Kyiv, Ukraine</p>
           <p class="footer__edrpou">EDRPOU: 40207031</p>
+        </div>
+      </div>
+    </div>  
+    <div class="footer__container" style="margin-bottom: 50px;">
+      <img src="/src/assets/images/main_char-2.png" alt="MYKYTA Matiukhov" class="footer__avatar" />
+
+      <div class="footer__info">
+        <h2 class="footer__name">MYKYTA Matiukhov</h2>
+        <p class="footer__position">Manager of the Czech Branch</p>
+        
+        <p class="footer__contact">
+          TEL: <a href="tel:+420774027997" class="footer__link">+420774027997</a>
+        </p>
+        
+        <p class="footer__contact footer__mail">
+          MAIL: <a href="mailto:mykyta.matiukhov@architect-expert.com" class="footer__link">mykyta.matiukhov@architect-expert.com</a>
+        </p>
+      </div>
+      
+
+      <div class="footer__right-group">
+        <div class="footer__divider"></div>
+        <div class="footer__right">
+          <div class="footer__circles">
+            <a href="tel:+420774027997" class="footer__circle" aria-label="Call MYKYTA Matiukhov">
+              <img src="/assets/images/call.svg" alt="Call" class="footer__circle-icon" />
+            </a>
+          
+            <a href="mailto: mykyta.matiukhov@architect-expert.com" class="footer__circle" aria-label="Email MYKYTA Matiukhov">
+              <img src="/assets/images/sms.svg" alt="Email" class="footer__circle-icon" />
+            </a>
+          </div>
+          <p class="footer__company-name"></p>
+          <p class="footer__address"></p>
+          <p class="footer__edrpou"></p>
         </div>
       </div>
     </div>
