@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про нас</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/js/header.js" defer></script>
+    <script src="/js/modal.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/">
+                <img src="/assets/images/architect-expert.svg" alt="Logo" class="header__logo" />
+            </a>
+
+            <button class="header__burger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <nav class="header__nav">
+                <a href="/about/" class="header__link">Про нас</a>
+                <a href="/projects" class="header__link">Проєкти</a>
+                <a href="/#collaborations" class="header__link">Співпраця</a>
+                <a href="#footer" class="header__link">Контакти</a>
+                <div class="header__lang">
+                  UA
+                  <img src="/assets/images/arrow-down.svg" alt="Arrow down" class="header__lang-icon" />
+                  <ul class="header__lang-dropdown">
+                    <li class="header__lang-item">EN</li>
+                    <li class="header__lang-item">DE</li>
+                    <li class="header__lang-item">UA</li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="projects-hero__container">
+            <h1 class="about-hero__title">МИ БУДУЄМО РІШЕННЯ.</h1>
+            <p class="about-hero__subtitle">
+                Всебічна технічна експертиза будівель та споруд (включаючи промислові об'єкти)            </p>
+            <button class="projects-hero__button" onclick="window.location.href='#footer'">Зв'язатися з нами</button>
+        </div>
+    </section>
+
+    <section class="about-message">
+        <div class="about-message__container">
+            <p class="about-message__text">
+                Наша експертиза в архітектурному проектуванні та технічній експертизі формує основу нашої діяльності. Ми створюємо енергоефективні рішення для медичних, освітніх та промислових об'єктів. Наша робота допомагає будувати стійке майбутнє для громад.            </p>
+        </div>
+    </section>
+
+    <section class="about-us-section">
+        <div class="about-us-section__container">
+            <div class="about-us-section__title-wrapper">
+                <img src="/assets/images/arrow-right-white.svg" alt="Arrow" class="about-us-section__icon" />
+                <h2 class="about-us-section__title">Про нас</h2>
+            </div>
+
+            <div class="about-us-section__facts">
+                <div class="about-us-section__fact">
+                    <div class="about-us-section__fact-number">2015</div>
+                    <div class="about-us-section__fact-label">Засновано</div>
+                </div>
+                <div class="about-us-section__fact">
+                    <div class="about-us-section__fact-number">500+</div>
+                    <div class="about-us-section__fact-label">Проєктів</div>
+                </div>
+                <div class="about-us-section__fact">
+                    <div class="about-us-section__fact-number">15</div>
+                    <div class="about-us-section__fact-label">Спеціалістів</div>
+                </div>
+            </div>
+
+            <div class="about-us-section__image-block">
+                <img src="/assets/images/about-us-bg.svg" alt="About Illustration" />
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="services-section__container">
+            <hr class="services-section__line" />
+            <div class="services-section__title-wrapper">
+                <img src="/assets/images/arrow-right.svg" alt="Arrow" class="services-section__icon" />
+                <h2 class="services-section__title">Наші послуги</h2>
+            </div>
+
+            <div class="services-section__grid">
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Проекти організації будівництва
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Оцінка впливу на навколишнє середовище (ОВНС)
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Газопостачання
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Зовнішні мережі теплопостачання
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Водопостачання, очисні споруди
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Опалення, вентиляція, кондиціонування
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Кошторисна документація
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Електропостачання та електричне освітлення
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Архітектурно-будівельні рішення
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Генеральні плани та благоустрій територій
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Розробка металевих конструкцій та документації з деталювання сталі
+                    </p>
+                </div>
+
+                <div class="services-section__card">
+                    <div class="services-section__card-icon-wrapper">
+                        <img src="/assets/images/checkmark.svg" alt="Icon" class="services-section__card-icon" />
+                    </div>
+                    <p class="services-section__card-text">
+                        Розробка документації залізобетонних конструкцій
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates-section">
+        <div class="certificates-section__container">
+            <div class="certificates-section__title-wrapper">
+                <img src="/assets/images/arrow-right-white.svg" alt="Arrow" class="certificates-section__icon" />
+                <h2 class="certificates-section__title">Наші сертифікати</h2>
+            </div>
+
+            <div class="certificates-section__grid">
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/pdf/sert1.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">SSU ISO 45001:2019</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/pdf/sert2.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">SSU ISO 50001:2020</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" data-index="0" style="background-image: url('/src/assets/images/pdf/sert3.jpg');"></div>
+                    <p class="certificates-section__text">SSU ISO 50001:2020</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/pdf/sert4.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">SSU ISO 14001:2015</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/pdf/sert5.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">SSU EN ISO 9001:2018</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates-section">
+        <div class="certificates-section__container">
+            <div class="certificates-section__title-wrapper">
+                <img src="/assets/images/arrow-right-white.svg" alt="Arrow" class="certificates-section__icon" />
+                <h2 class="certificates-section__title">FIDIC сертефікати</h2>
+            </div>
+
+            <div class="certificates-section__grid">
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/FIDIC/1.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">ISO/IEC 17024:2012</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/FIDIC/2.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">Серія AR Nº018501</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/FIDIC/3.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">Серія AR Nº021579</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/FIDIC/4.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">Серія AT Nº009697</p>
+                </div>
+
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/FIDIC/5.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">Серія AE Nº007417</p>
+                </div>
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/FIDIC/CI-01301.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">ISO/IEC 17024:2012</p>
+                </div>
+                <div class="certificates-section__item">
+                    <div class="certificates-section__image-placeholder" style="background-image: url('/src/assets/images/FIDIC/CI-01305.jpg');" data-index="0"></div>
+                    <p class="certificates-section__text">ISO/IEC 17024:2012</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta__container">
+          <a href="mailto:serhii.matiukhov@architect-expert.com?subject=Subcontractor Inquiry" style="text-decoration: none;">
+            <div class="cta__background">
+              <div class="cta__content">
+                <h2 class="cta__title">Станьте партнером</h2>
+                <img src="/src/assets/images/arrow-right-white.svg" alt="Arrow" class="cta__arrow" />
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    
+      <section class="footer" id="footer">
+        <div class="footer__container" style="margin-bottom: 50px;">
+          <img src="/src/assets/images/main_char.png" alt="Сергій Матюхов" class="footer__avatar" />
+    
+          <div class="footer__info">
+            <h2 class="footer__name">Сергій Матюхов</h2>
+            <p class="footer__position">Засновник та Керуючий директор</p>
+            
+            <p class="footer__contact">
+              TEL: <a href="tel:+380503265630" class="footer__link">+380503265630</a>
+            </p>
+            
+            <p class="footer__contact footer__mail">
+              MAIL: <a href="mailto:serhii.matiukhov@architect-expert.com" class="footer__link">serhii.matiukhov@architect-expert.com</a>
+            </p>
+          </div>
+          
+    
+          <div class="footer__right-group">
+            <div class="footer__divider"></div>
+            <div class="footer__right">
+              <div class="footer__circles">
+                <a href="tel:+380503265630" class="footer__circle" aria-label="Call MYKYTA Matiukhov">
+                  <img src="/assets/images/call.svg" alt="Call" class="footer__circle-icon" />
+                </a>
+              
+                <a href="mailto: mykyta.matiukhov@architect-expert.com" class="footer__circle" aria-label="Email MYKYTA Matiukhov">
+                  <img src="/assets/images/sms.svg" alt="Email" class="footer__circle-icon" />
+                </a>
+              </div>
+              <p class="footer__company-name">Проектне бюроТОВ "Архітет Експерт"</p>
+              <p class="footer__address">вул. Борисоглібська, 17/1, 04070 Київ, Україна</p>
+              <p class="footer__edrpou">ЄДРПОУ: 40207031</p>
+            </div>
+          </div>
+        </div>  
+        <div class="footer__container" style="margin-bottom: 50px;">
+          <img src="/src/assets/images/main_char-2.png" alt="MYKYTA Matiukhov" class="footer__avatar" />
+    
+          <div class="footer__info">
+            <h2 class="footer__name">МИКИТА МАТЮХОВ</h2>
+            <p class="footer__position">Менеджер філії в Чехії</p>
+            
+            <p class="footer__contact">
+              TEL: <a href="tel:+420774027997" class="footer__link">+420774027997</a>
+            </p>
+            
+            <p class="footer__contact footer__mail">
+              MAIL: <a href="mailto:mykyta.matiukhov@architect-expert.com" class="footer__link">mykyta.matiukhov@architect-expert.com</a>
+            </p>
+          </div>
+          
+    
+          <div class="footer__right-group">
+            <div class="footer__divider"></div>
+            <div class="footer__right">
+              <div class="footer__circles">
+                <a href="tel:+420774027997" class="footer__circle" aria-label="Call MYKYTA Matiukhov">
+                  <img src="/assets/images/call.svg" alt="Call" class="footer__circle-icon" />
+                </a>
+              
+                <a href="mailto: mykyta.matiukhov@architect-expert.com" class="footer__circle" aria-label="Email MYKYTA Matiukhov">
+                  <img src="/assets/images/sms.svg" alt="Email" class="footer__circle-icon" />
+                </a>
+              </div>
+              <p class="footer__company-name"></p>
+              <p class="footer__address"></p>
+              <p class="footer__edrpou"></p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="footer__bottom">
+          <hr class="footer__line" />
+          <img src="./assets/images/footer-text.svg" alt="Footer Image" class="footer__text" />
+          <hr class="footer__line" />
+        </div>
+    
+        <p class="footer__copyright">© ARCHITECT EXPERT. Усі права захищені.</p>
+      </section>
+    <div class="modal" id="certificateModal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <img class="modal__main-image" src="" alt="Full Certificate" />
+            <div class="modal__thumbnails"></div>
+        </div>
+    </div>
+</body>
+
+</html>
